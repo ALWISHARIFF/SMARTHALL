@@ -1,0 +1,9 @@
+config:
+  target: "http://127.0.0.1:8080/"
+  phases:
+    - duration: 3600
+      arrivalRate: 5
+scenarios:
+  - engine: "socketio"
+    flow:
+      - think: 600 # do nothing for 10m and disconnect

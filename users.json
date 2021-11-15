@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "612c7c527281c444047b3b0d"
+  },
+  "isAdmin": true,
+  "name": "Alwi Shariff",
+  "email": "alwishariff00001@gmail.com",
+  "password": "$2a$10$q8rbGgy6qzAYe6c.w19WEenORnAtzcVZLGX7cr.vp9PUAwWDQME7a",
+  "phonenumber": "0111437459",
+  "username": "alwishariff",
+  "socketId": "juHxXoY2nMNxbrDNAAAF"
+},{
+  "_id": {
+    "$oid": "612e9260645ca3733ddd2b54"
+  },
+  "isAdmin": true,
+  "name": "RidhwanAdmin",
+  "email": "ridhwanadmin@gmail.com",
+  "password": "$2a$10$YQDZO6zvqv6Q.6Voe7KHAuGsTjvM08GXmvb7VCYu7ImyREz8mNkbu",
+  "phonenumber": "000000",
+  "username": "Ridhwan_Admin",
+  "socketId": "OKTq1tp4AcSBoEW7AACs"
+},{
+  "_id": {
+    "$oid": "612e929f645ca3733ddd2b5c"
+  },
+  "isAdmin": false,
+  "name": "RidhwanGuest",
+  "email": "ridhwanguest@gmail.com",
+  "password": "$2a$10$OZdeIw9GXvReFxmsUYtzFe/mrDG/Vv6vQVA3Ad8bDcbc9MFE303HW",
+  "phonenumber": "0722272023",
+  "username": "Ridhwan_Guest"
+},{
+  "_id": {
+    "$oid": "612f74b2645ca3733ddd2c89"
+  },
+  "isAdmin": true,
+  "name": "Alwi Albeity",
+  "email": "alwiali00001@gmail.com",
+  "password": "$2a$10$dfw9yMZsllXxwFpRzgTT0eZ./kTQXATpf.V9j.q4KJDZ1cUjlvZza",
+  "phonenumber": "0722400065",
+  "username": "Alwi@gmail.com"
+},{
+  "_id": {
+    "$oid": "612fcd2a092f1130f43372a2"
+  },
+  "isAdmin": false,
+  "name": "alwi shariff",
+  "email": "alwiali00sss001@gmail.com",
+  "password": "$2a$10$VFVFiGdusNiTRl76JoXyeeKRAbTWnFbngvDlbIY/JUcE0lh1FMQcO",
+  "phonenumber": "222",
+  "username": "alwishariff01@gmail.com"
+},{
+  "_id": {
+    "$oid": "612fce3a09c5e05df417745d"
+  },
+  "isAdmin": false,
+  "name": "alwi shariff",
+  "email": "alwiali0dddd0001@gmail.com",
+  "password": "$2a$10$1QSG7XbUVc.tcyes96Ppmu3pkG6yO/EoothVh.FR4TvqgbE2WhI4i",
+  "phonenumber": "345445",
+  "username": "alwisharssdiff00001@gmail.com"
+}]

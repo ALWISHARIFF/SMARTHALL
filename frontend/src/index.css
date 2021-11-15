@@ -1,0 +1,27 @@
+main {
+  min-height: 80vh;
+}
+[aria-hidden="true"] {
+  visibility: hidden;
+}
+h3 {
+  padding: 1rem 0;
+}
+.rangelabel {
+  display: block;
+}
+.daterange {
+  padding: 0px;
+}
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+.special-day::before {
+  content: "Today's Date";
+}

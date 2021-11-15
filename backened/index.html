@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+      body {
+        margin: 0;
+        padding-bottom: 3rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+      }
+
+      #form {
+        background: rgba(0, 0, 0, 0.15);
+        padding: 0.25rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        height: 3rem;
+        box-sizing: border-box;
+        backdrop-filter: blur(10px);
+      }
+      #input {
+        border: none;
+        padding: 0 1rem;
+        flex-grow: 1;
+        border-radius: 2rem;
+        margin: 0.25rem;
+      }
+      #input:focus {
+        outline: none;
+      }
+      #form > button {
+        background: #333;
+        border: none;
+        padding: 0 1rem;
+        margin: 0.25rem;
+        border-radius: 3px;
+        outline: none;
+        color: #fff;
+      }
+
+      #messages {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      #messages > li {
+        padding: 0.5rem 1rem;
+      }
+      #messages > li:nth-child(odd) {
+        background: #efefef;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="messages"></ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- {"name":"awi","password":"alwi","email":"alwisharifsssssssf@gmail.coma","phonenumber":"0111437457"} -->
+    <script>
+      var token =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMTkwMjA0MDJlZjdlNDkwMDBiMTE0NCIsImlhdCI6MTYyOTAzMjA0NiwiZXhwIjoyNTc1NzYwMDQ2fQ.SFejhaMK7WUDeVD7VXyrAbdS6KLqLkiBL-GBWIpcDK0";
+      var socket = io("http://localhost:8080", { query: `token=${token}` });
+
+      var messages = document.getElementById("messages");
+      var form = document.getElementById("form");
+      var input = document.getElementById("input");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (input.value) {
+          // var data = { data };
+          // console.log(data);
+          // socket.emit("addvenue", input.value);
+          // socket.emit("addbooking", input.value);
+          // socket.emit("addbooking", input.value);
+          // socket.emit("deletevenue", input.value);
+          // socket.emit("getvenues");
+          socket.emit("getbookingbydate", input.value);
+        }
+      });
+
+      socket.on("register", function (msg) {
+        console.log(msg);
+        let msgtext = msg;
+        var item = document.createElement("li");
+        item.textContent = JSON.stringify(msgtext);
+        messages.appendChild(item);
+        window.scrollTo(0, document.body.scrollHeight);
+      });
+      socket.on("getbookings", function (msg) {
+        console.log(msg);
+        let msgtext = msg;
+        var item = document.createElement("li");
+        item.textContent = JSON.stringify(msgtext);
+        messages.appendChild(item);
+        window.scrollTo(0, document.body.scrollHeight);
+      });
+    </script>
+  </body>
+</html>

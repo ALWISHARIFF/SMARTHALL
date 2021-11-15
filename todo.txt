@@ -1,0 +1,22 @@
+1-Backened Schema allday,enddate-Done
+2-Add DateTimeRangePicker-Done
+2-Add booking Form-Done
+1-Schema fixing to adjust to react calender(accessor)-Done
+2- Configure React calender-Done
+3- Create a modal.-Done
+Modal---
+Reusable Modal
+<ModalContainer><Form></ModalContainer>
+Select Calender Date=>Open Modal
+--Fix date sent to server
+--Adjust Modal
+--Test The App
+1-Click date dispatch to store.-Done
+2-get date from store to date DateTimeRangePicker-Done
+3-Able to change date.-Done
+4-Resuable Modal-Done
+5-User create,edit,delete loading-Done
+6-date format dd-mm-yyyy-ttt-Done
+7-popup-Done
+8-Component-Done
+9-Toast

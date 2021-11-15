@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import BigCalender from "../components/BigCalender";
+
 
 const HomeScreen = ({ history }) => {
 
